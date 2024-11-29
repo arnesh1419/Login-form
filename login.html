@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="/submit-login" method="POST">
+        <!-- Email Input -->
+        <div>
+            <label for="email">Email Address:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                required 
+                autocomplete="email">
+        </div>
+
+        <!-- Password Input -->
+        <div>
+            <label for="password">Password:</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password" 
+                required 
+                minlength="8"
+                autocomplete="current-password">
+        </div>
+
+        <!-- Remember Me Checkbox -->
+        <div>
+            <label>
+                <input type="checkbox" name="remember"> Remember Me
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Login</button>
+        </div>
+
+        <!-- Footer Links -->
+        <div>
+            <a href="/forgot-password">Forgot Password?</a><br>
+            <a href="/register">Create an Account</a>
+        </div>
+    </form>
+</body>
+</html>
